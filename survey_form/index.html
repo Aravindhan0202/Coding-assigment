@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <form id="Survey" onsubmit="return false;">
+        <label for="FirstName">First Name</label><br>
+        <input type="text" id="FirstName"  required><br>
+
+        <label for="LastName">Last Name</label><br>
+        <input type="text" id="LastName"  required><br>
+
+        <label for="DateOfBirth">Date Of Birth(DOB)</label><br>
+        <input type="date" id="DateOfBirth"  required><br>
+
+        <label for="Country">Country</label><br>
+        <select id="Country"  required>
+            <option value="" selected>Select Country</option>
+        </select><br>
+        
+        
+        <label>Gender:</label><br>
+        <div class="checkbox-group" required>
+            <label><input type="checkbox"   name="Gender" value="Male" onclick="uncheckOtherCheckboxes(this)">Male</label>
+            <label><input type="checkbox"   name="Gender" value="Female" onclick="uncheckOtherCheckboxes(this)">Female</label>
+            <label><input type="checkbox"   name="Gender" value="other" onclick="uncheckOtherCheckboxes(this)">other</label>
+        </div>
+
+        <label for="Profession">Profession</label><br>
+        <input type="text" id="Profession"  required><br>
+
+        <label for="email">Email-Id</label><br>
+        <input type="email" id="email"  required><br>
+
+        <label for="mobile">Mobile</label><br>
+        <input type="tel" id="mobile"  required><br>
+
+        <button onclick="resetForm()">Reset</button>
+        <button onclick="submitForm()">Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

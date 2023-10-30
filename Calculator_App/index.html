@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="display">
+        <button id="AC" onclick={clearDisplay()}>AC</button>
+        <button id="Number" onclick="appendToDisplay('9')">9</button>
+        <button id="Number" onclick="appendToDisplay('8')">8</button>
+        <button id="Number" onclick="appendToDisplay('7')">7</button>
+        <button id="Operator" onclick="appendToDisplay('+')">+</button>
+        <button id="Number" onclick="appendToDisplay('4')">4</button>
+        <button id="Number" onclick="appendToDisplay('5')">5</button>
+        <button id="Number" onclick="appendToDisplay('6')">6</button>
+        <button id="Operator" onclick="appendToDisplay('-')">-</button>
+        <button id="Number" onclick="appendToDisplay('1')">1</button>
+        <button id="Number" onclick="appendToDisplay('2')">2</button>
+        <button id="Number" onclick="appendToDisplay('3')">3</button>
+        <button id="Operator" onclick="appendToDisplay('/')">/</button>
+        <button id="Number" onclick="appendToDisplay('.')">.</button>
+        <button id="Number" onclick="appendToDisplay('0')">0</button>
+        <button id="Number" onclick="calculateResult()">=</button>
+        <button id="Operator" onclick="appendToDisplay('*')">x</button>
+    </div>
+    <script src="script.js"></script>
+</body>

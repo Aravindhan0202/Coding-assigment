@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: darkgray;
+}
+#calculator {
+    width: 300px;
+    margin:100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+input[type="text"] {
+    flex-grow: 1;
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+}
+#AC {
+    width: 75px;
+    height: 66px;
+    border: none;
+    background-color: rgb(4, 161, 161);
+    color: white;
+}
+#Number {
+    width: 75px;
+    height: 60px;
+    background-color: black;
+    border: none;
+    color: white;
+}
+#Operator {
+    width: 75px;
+    height: 60px;
+    background-color: gray;
+    border: none;
+    color: white;
+}
